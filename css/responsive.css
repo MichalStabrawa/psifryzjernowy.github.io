@@ -1,0 +1,54 @@
+
+
+
+/* Responsive 768 START*/
+
+@media (max-width: 768px) {
+
+    /* ul dodaje niepotrzebny margin -usuwamy*/
+    
+    }
+    #main-nav ul .menu-item {
+        padding: 15px;
+    }
+
+    #about figure .about-img {
+        width: 100%;
+        max-height: none;
+    }
+    #skils #skils-icons figure {
+        margin: 0;
+        width: 49%;
+        margin-top: 30px;
+    }
+}
+
+
+/* Responsive 768 Stop*/
+
+
+/* Responsive 480 START*/
+
+@media (max-width: 480px) {
+    section {
+        padding: 40px 0px;
+    }
+    #main-header .header-caption h1 {
+        font-size: 3em;
+    }
+    #main-header .header-caption h2 {
+        font-size: 2em;
+    }
+    #skils #skils-icons figure {
+        width: 100%;
+    }
+    #contact .social-icons a {
+        margin-top: 2px;
+    }
+    #portfolio .portfolio-item  {
+       width: 100%;
+    }
+}
+
+
+/* Responsive 480 Stop*/

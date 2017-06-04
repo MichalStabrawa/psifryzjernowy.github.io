@@ -1,0 +1,466 @@
+        /* General Styles - Start */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+        /* H Style span       */
+        
+        span {
+            color: deeppink;
+            font-weight: 400;
+        }
+        
+        h2 {
+            font-family: 'Titan One', cursive;
+            padding-bottom: 20px;
+            text-shadow: 1px 1px 1px grey;
+            color: black;
+            text-align: center;
+            margin-top: 0px;
+            animation-name: load;
+            animation-duration: 1s;
+        }
+        
+        h1 {
+            font-family: 'Titan One', cursive;
+            animation-name: load;
+            text-shadow: 1px 1px 1px grey;
+            color: black;
+            animation-duration: 2s;
+        }
+        
+        @keyframes load {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+        
+        #buton {
+            text-align: center;
+        }
+        
+        #buton .btn-primary {
+            background-color: deeppink;
+            width: 220px;
+            margin-bottom: 20px;
+        }
+        /*Style Klasa col-1-2*/
+        
+        .col-1-2 {
+            width: 50%;
+            float: left;
+            margin: 0;
+        }
+        
+        section {
+            overflow: auto;
+            padding: 40px 0;
+        }
+        
+        p {
+            line-height: 1.5em;
+        }
+        /*moje menu glowne */
+        
+        #main-nav {
+            border-color: transparent;
+            position: fixed;
+            background-color: transparent;
+            width: 100%;
+            z-index: 10;
+        }
+        
+        #main-nav ul {
+            text-align: right;
+        }
+        
+        #main-nav ul .menu-item {
+            display: inline-block;
+            padding: 25px;
+        }
+        
+        #main-nav ul a {
+            font-size: 20px;
+            color: deeppink;
+            transition: all .3s;
+        }
+        
+        #main-nav ul a:hover {
+            color: green;
+        }
+        
+        #main-nav.scroll {
+            color: deeppink;
+            background-color: #fff;
+        }
+        
+        #main-nav.scroll ul .menu-item a {
+            color: #1ac056;
+        }
+        
+        #main-nav.scroll ul .menu-item a:hover {
+            color: green;
+        }
+        /*Menu glowne stop*/
+        /* Naglowek Start ***********************************************************************/
+        
+        #main-header {
+            background-image: url(../img/psi-fryzjer-nowy-wisnicz.jpg);
+            height: 100vh;
+            background-size: cover;
+            position: relative;
+        }
+        
+        #main-header .header-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #main-header .header-caption h1 {
+            font-size: 5em;
+            font-weight: 300;
+        }
+        
+        #main-header .header-caption h2 {
+            font-size: 4em;
+            font-weight: 300;
+        }
+        /* Naglowek stop */
+        
+        h2 {
+            text-align: center;
+        }
+        /*ABOUT SECTION Style Start*/
+        
+        #about {
+            margin: 0px;
+        }
+        
+        #about figure {
+            width: 50%;
+            margin: 0;
+            text-align: center;
+        }
+        
+        #about figure .about-img {
+            max-width: 60%;
+            border: 10px;
+            border-radius: 10px;
+            margin: 0px;
+        }
+        
+        #icons-about .fa {
+            background-color: black;
+            border: 1px solid #fff;
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 50px;
+            overflow: hidden;
+            border-radius: 100px;
+            transition: 1s;
+            color: deeppink;
+        }
+        
+        #icons-about .fa:hover {
+            color: black;
+            background-color: deeppink;
+            transition: 1s;
+            transform: rotate(360deg);
+        }
+        /* Skills Umiejetnosci Start style */
+        
+        #skils p {
+            text-align: center;
+        }
+        
+        #skils .skils-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        #skils .skils-icons figure {
+            display: inline-block;
+            margin: 20px;
+            transition: 1s;
+        }
+        
+        #skils #skils-icons figure figcaption {
+            margin-top: 10px;
+        }
+        
+        #panel {
+            display: none;
+        }
+        
+        #panel2 {
+            display: none;
+        }
+        
+        #panel2 form select {
+            height: 30px;
+            width: 150px;
+            border-radius: 2px;
+            background-color: deeppink;
+            color: #fff;
+            
+        }
+
+
+
+input[type='submit']{
+    background-color: pink;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 2px;
+}
+        
+        #panel form select {
+            height: 30px;
+            width: 150px;
+            border-radius: 2px;
+            background-color: deeppink;
+            color: #fff;
+        }
+        
+        .parallax {
+            /* The image used*************************************************** */
+            background-image: linear-gradient(rgba(255, 0, 255, 0.3), rgba(255, 0, 255, 0.3)), url(../img/headerdog.png);
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            color: aliceblue;
+        }
+        
+        .parallax-text {
+            height: 50px;
+            background-color: #fff;
+        }
+        
+        .parallax .container p {
+            margin-top: 50px;
+            font-size: 1.3em;
+            text-shadow: 1px 1px 1px black;
+        }
+        /*Skils umiejetnosci end*/
+        /* Portfolio section style start *********************************************************/
+        /* <!---->*/
+        
+        #portfolio .portfolio-items {
+            font-size: 0;
+            text-align: center;
+        }
+        
+        #portfolio .portfolio-items [class*="col-"] {
+            padding: 0;
+        }
+        
+        #portfolio .portfolio-item {
+            height: 350px;
+            font-size: initial;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: #fff;
+        }
+        
+        #portfolio .portfolio-item .portfolio-mask {
+            background-color: rgba(255, 0, 255, 0.2);
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            transition: all .3s;
+        }
+        
+        #portfolio .portfolio-item .portfolio-mask:hover {
+            opacity: 1;
+        }
+        
+        #portfolio .portfolio-item .portfolio-mask .portfolio-content {
+            border: 1px solid #fff;
+            height: 95%;
+            width: 95%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: auto;
+        }
+        
+        #portfolio .portfolio-item .portfolio-mask .portfolio-content .portfolio-content-inner {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 5px;
+        }
+        
+        #portfolio .portfolio-item .portfolio-mask .portfolio-content .portfolio-content-inner a {
+            color: #fff;
+            transition: all .3s;
+        }
+        
+        #portfolio .portfolio-item .portfolio-mask .portfolio-content .portfolio-content-inner a:hover {
+            color: lawngreen;
+        }
+        
+        #portfolio-item-1 {
+            background-image: url(../img/fryzury-psie1.jpg);
+        }
+        
+        #portfolio-item-2 {
+            background-image: url(../img/psiafryzura.jpg);
+        }
+        
+        #portfolio-item-3 {
+            background-image: url(../img/stylizacje-psa-nowy-wisnicz.jpg);
+        }
+        
+        #skils {
+            width: 100%;
+            display: inline-block margin: 0;
+        }
+        /* contakt style*/
+        
+        #contact {
+            background-color: rgba(255, 0, 255, 0.3);
+            color: #fff;
+        }
+        
+        #contact h2 {
+            text-align: left;
+        }
+        
+        #contact adress {
+            font-style: normal
+        }
+        
+        #contact adress a {
+            color: #1ac056;
+            transition: all .3s
+        }
+        
+        #contact adress a:hover {
+            color: #fff;
+        }
+        
+        #contact .social-icons {
+            padding-bottom: 10px;
+            margin top: 30px;
+        }
+        
+        #contact .social-icons a {
+            color: #fff;
+          
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 50px;
+           font-size: 0.9em;
+            border-radius: 90px;
+            background-color: black
+        }
+        
+        #contact .social-icons a:hover {
+            transition: 0.5s;
+            color: hotpink;
+            background-color: #fff;
+        }
+        /* form style*/
+        
+        #contact form input:not([type='submit']),
+        #contact form textarea {
+            width: 100%;
+            background-color: lightpink;
+            border: 0px solid #fff;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        
+        #contact form input:not([type='submit']):focus,
+        #contact form textarea:focus {
+            background-color: #4c6f8d;
+        }
+        
+        #contact form input[type='submit'] {
+            background-color: deeppink;
+            padding: 15px;
+            text-transform: uppercase;
+            color: #fff;
+            border: 0px solid #fff;
+            cursor: pointer;
+            float: right;
+            transition: all .3s;
+            line-height: 0;
+        }
+        
+        #contact form input[type='submit']:hover {
+            background-color: #fff;
+            color: deeppink;
+        }
+        
+        #maps {
+            overflow: hidden;
+        }
+        
+        #maps iframe {
+            border: 2px solid black;
+            max-width: 380px;
+        }
+        /*Footer Style Start*/
+        
+        footer {
+            background-color: #142634;
+            padding 0 60px;
+            color: #fff;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        /*Galery style start galeria.html*/
+        
+        .galeria-fryzury {
+            border-radius: 5px;
+            height: 330px;
+            width: 500px;
+            overflow: hidden;
+            background-size: cover;
+            margin-bottom: 30px;
+            
+        }
+        
+        .galeria-fryzury img {
+            border-radius: 5px;
+            opacity: 0.8;
+            transition: 1s;
+        }
+        
+        .galeria-fryzury img:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
