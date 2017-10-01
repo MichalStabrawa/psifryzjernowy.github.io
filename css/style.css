@@ -114,18 +114,20 @@
         /* Naglowek Start ***********************************************************************/
         
         #main-header {
-            background-image: url(../img/Nikola.jpg);
+            background-image: url(../img/header-3.jpg);
             height: 100vh;
             background-size: cover;
             position: relative;
             background-position: bottom left;
+            
+          
            
             
         }
         
         #main-header .header-caption {
             position: absolute;
-            top: 50%;
+            top: 25%;
             transform: translateY(-50%);
             left: 0;
             right: 0;
@@ -251,7 +253,7 @@ input[type='submit']{
             min-height: 500px;
             /* Create the parallax scrolling effect */
             background-attachment: fixed;
-            background-position: center;
+            background-position: right;
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
@@ -274,6 +276,18 @@ input[type='submit']{
             
         }
         /*Skils umiejetnosci end*/
+
+/*course style*/
+
+#course .col-md-4{
+    background: pink;
+    color:#fff;
+    border-radius:5px;
+    padding: 10px;
+   
+   
+    
+}
         /* Portfolio section style start Galeria*********************************************************/
         /* <!---->*/
         
