@@ -69,7 +69,7 @@
         p {
             line-height: 1.5em;
         }
-        /*moje menu glowne */
+        /*moje menu glowne  menu-nav */
         
         #main-nav {
             border-color: transparent;
@@ -111,7 +111,7 @@
             color: green;
         }
         /*Menu glowne stop*/
-        /* Naglowek Start ***********************************************************************/
+        /* Naglowek Start *Header style**********************************************************************/
         
         #main-header {
             background-image: url(../img/header-3.jpg);
@@ -119,10 +119,6 @@
             background-size: cover;
             position: relative;
             background-position: bottom left;
-            
-          
-           
-            
         }
         
         #main-header .header-caption {
@@ -150,14 +146,13 @@
         h2 {
             text-align: center;
         }
-        /*ABOUT SECTION Style Start*/
+        /*ABOUT SECTION Style Start******************************************************************************************************************************************/
         
         #about {
             margin: 0px;
         }
         
         #about figure {
-           
             margin: 0;
             text-align: center;
         }
@@ -190,7 +185,7 @@
             transition: 1s;
             transform: rotate(360deg);
         }
-        /* Skills Umiejetnosci Start style */
+        /* Skils Umiejetnosci Start style ***********************************************************************************************************************8*/
         
         #skils p {
             text-align: center;
@@ -219,35 +214,28 @@
             display: none;
         }
         
-        #panel2 form select {
-            height: 30px;
-            width: 150px;
-            border-radius: 2px;
-            background-color: deeppink;
-            color: #fff;
-            
+        #price h5 {
+            text-align: center;
         }
-
-
-
-input[type='submit']{
-    background-color: pink;
-    width: 150px;
-    height: 30px;
-    margin: 10px;
-    border-radius: 2px;
-}
         
-        #panel form select {
-            height: 30px;
-            width: 150px;
-            border-radius: 2px;
-            background-color: deeppink;
-            color: #fff;
+        #price h5::after {
+            content: "";
+            display: block;
+            border: 1px solid #fff;
         }
+        
+        #price {
+            display: none;
+            background-color: black;
+            color: #fff;
+            border-radius: 5px;
+            z-index: 200;
+            margin-bottom: 20px;
+        }
+        /*parralax-------------------------------------------------------------------------------------------------------------------------------------*/
         
         .parallax {
-          position: relative;
+            position: relative;
             background-image: linear-gradient(rgba(255, 0, 255, 0.3), rgba(255, 0, 255, 0.3)), url(../img/Nikola.jpg);
             /* Set a specific height */
             min-height: 500px;
@@ -265,29 +253,26 @@ input[type='submit']{
             background-color: #fff;
         }
         
-        .parallax .container p {position:absolute;
+        .parallax .container p {
+            position: absolute;
             margin-top: 50px;
             font-size: 1.1em;
             text-shadow: 1px 1px 1px black;
             top: 40%;
-             left: 50%;
-   width: 90%;
-    transform: translate(-50%,-50%);
-            
+            left: 50%;
+            width: 90%;
+            transform: translate(-50%, -50%);
         }
         /*Skils umiejetnosci end*/
-
-/*course style*/
-
-#course .col-md-4{
-    background: pink;
-    color:#fff;
-    border-radius:5px;
-    padding: 10px;
-   
-   
-    
-}
+        /*course style--------------------------------------------------------------------------------------------------------------------------------*/
+        
+        #course .col-md-4 {
+            box-shadow:         inset 0 0 10px #000000;
+            background: pink;
+            color: #fff;
+            padding: 10px;
+            border-radius:5px;
+        }
         /* Portfolio section style start Galeria*********************************************************/
         /* <!---->*/
         
@@ -362,7 +347,8 @@ input[type='submit']{
         
         #skils {
             width: 100%;
-            display: inline-block margin: 0;
+            display: inline-block;
+            margin: 0;
         }
         /* contakt style*********************************************************************************************************************************************/
         
@@ -395,7 +381,6 @@ input[type='submit']{
         
         #contact .social-icons a .fa {
             color: #fff;
-          
             display: inline-block;
             height: 50px;
             width: 50px;
@@ -403,7 +388,6 @@ input[type='submit']{
             margin-top: 10px;
             text-align: center;
             line-height: 50px;
-           
             border-radius: 90px;
             background-color: black
         }
@@ -474,7 +458,6 @@ input[type='submit']{
             overflow: hidden;
             background-size: cover;
             margin-bottom: 30px;
-            
         }
         
         .galeria-fryzury img {
@@ -487,21 +470,20 @@ input[type='submit']{
             opacity: 1;
             transform: scale(1.1);
         }
-
-/*btn style*/
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: lightpink;
-   
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-    opacity:0.8;
-}
+        /*btn style*/
+        
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: lightpink;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            opacity: 0.8;
+        }

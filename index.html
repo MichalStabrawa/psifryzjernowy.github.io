@@ -23,7 +23,7 @@
 
 <body>
 
-    <!--menu-->
+    <!--menu nav-->
 
     <nav id="main-nav" class="navbar navbar-default">
         <div class="container-fluid">
@@ -70,7 +70,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!--Nagłówek start-->
+    <!--Nagłówek start   Header-->
 
 
     <header id="main-header">
@@ -79,7 +79,9 @@
             <h2>TEL 502505132</h2>
         </div>
     </header>
+
     <!--About Section------------------------------------------------------------------------------------------------------------------------------------------------->
+
     <section id="about">
         <div class="container">
             <div class="row">
@@ -100,7 +102,7 @@
                 </figure>
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, beatae. Saepe facilis, iste, ipsam nesciunt mollitia accusantium. Excepturi magnam ad officia at odit facere tenetur, libero itaque minus maxime eaque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusamus aliquid officiis aliquam, eveniet, possimus assumenda corrupti error, iure esse saepe maxime rem! Reiciendis sed, perspiciatis ipsam magnam facere iusto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore deserunt rem debitis provident accusantium, culpa dicta facere assumenda itaque magni veritatis nemo similique sapiente repudiandae ducimus reprehenderit suscipit repellat impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quas voluptatibus dolorum nam unde consectetur temporibus, dolorem a cumque fugiat voluptate eius eveniet reprehenderit fugit est ut nobis molestiae! Sit.</p>
-                    
+
                 </div>
             </div>
         </div>
@@ -108,7 +110,7 @@
 
     <!--Nagłówek Stop-->
 
-    <!--Usługi ----------------------------------------------------------------------------------------------------------------------------------->
+    <!--Usługi -----------------Skils section------------------------------------------------------------------------------------------------------------------>
 
     <section id="skils">
         <div class="container">
@@ -162,10 +164,10 @@
                 <div class="col-md-6" id="panel2">
                     <h3>Cennik</h3>
 
-                    <button type="button" class="btn btn-primary">MAŁE RASY</button>
-                    <button type="button" class="btn btn-primary">MAŁE RASY</button>
-                    <button type="button" class="btn btn-primary">MAŁE RASY</button>
-
+                    <button type="button" class="btn btn-primary" id="priceS">MAŁE RASY</button>
+                    <button type="button" class="btn btn-primary" id="priceM">ŚREDNIE RASY</button>
+                    <button type="button" class="btn btn-primary" id="priceL">DUŻE RASY</button>
+             
 
 
                 </div>
@@ -175,13 +177,10 @@
 
                         <input type="name" value="Imię">
                         <input type="name" value="Nazwisko">
-                        
+
                         <input type="email" value="email">
-                        <select>
-                            <option>mała rasa</option>
-                            <option>średnia rasa</option><option>duża rasa</option>
-                        </select>
-                        <input type="submit" value="Sprawdź termin">
+
+                        <button type="button" class="btn btn-primary">REZERWUJ TERMIN</button>
                     </form>
 
                     <div id="sprawdz"></div>
@@ -191,7 +190,15 @@
             </div>
 
 
-
+       <div class="row">
+                        <div class="col-md-12" id="price">
+                           
+                            <h5 id="priceH">Przybliżony koszt sztrzyżenia*</h5>
+                            <p id="changePrice">90-100zł</p>
+                            <p>Podana cena odnosi się do usługi kompleksowej tzn: kąpiel, strzyżenie, rozczesywanie, obcinanie pazurków, czyszczenie uszu i oczu</p>
+                            <p>*Ostateczną cenę podaje fryzjer po obejrzeniu psa</p>
+                        </div>
+                    </div>
 
         </div>
 
@@ -221,21 +228,27 @@
             <div class="row ">
                 <h2>Kursy groomerskie</h2>
                 <div class="col-md-12">
-              <p> Prowadzimy profesjonalne kursy gromerskie które pozwalają w krótkim czasie nabyć praktyczne umiejętnośći w komercyjnym strzyżeniu psów. Posiadamy specjalnie opracowany program szkoleń oparty o nasze bardzo bogate międzynarodowe doświadczenie w groomingu.Nasze szkolenia kładą nacisk na naukę praktycznych umiejętnośći i technik strzyżenia psów.  </p>
-               <p>W naszej ofercie szkoleń groomerskich znajdziecie Państwo:</p> 
-               
-             
-             
+                    <p> Prowadzimy profesjonalne kursy gromerskie które pozwalają w krótkim czasie nabyć praktyczne umiejętnośći w komercyjnym strzyżeniu psów. Posiadamy specjalnie opracowany program szkoleń oparty o nasze bardzo bogate międzynarodowe doświadczenie w groomingu.Nasze szkolenia kładą nacisk na naukę praktycznych umiejętnośći i technik strzyżenia psów. </p>
+                    <p>W naszej ofercie szkoleń groomerskich znajdziecie Państwo:</p>
+
+
+
                 </div>
             </div>
-              <div class="row center-block ">
-                   <div class="col-md-4 text-center "><i class="fa fa-4x fa-graduation-cap" aria-hidden="true"></i><h4>Szkolenie strzyżenia psów podstawowe</h4>
-                   <p>Kurs przeznaczony dla osób początkujących które chciałyby nauczyć się i przygotować do profesjonalnego strzyżenia psów. Kurs trwa 12dni. Cena 3500zł</p></div>
-                    <div class="col-md-4 text-center"><i class="fa fa-4x fa-graduation-cap" aria-hidden="true"></i><h4>Szkolenie podwyższające kwalifikacje</h4>
-                   <p>Szkolenie przeznaczone dla osób które chciałyby podnieść swoje umiejętności techniczne w strzyżeniu psów. Kurs trwa 10 dni.Cena 4000zł</p></div>
-                     <div class="col-md-4 text-center"><i class="fa fa-4x fa-certificate" aria-hidden="true"></i><h4>Szkolenie Creative Grooming</h4>
-                   <p>Szkolenie przeznaczone dla osób które chciałyby podnieść swoje kwalifikacje w nowoczesnej stylizacji psów. Szkolenie trwa 1 dzień. Cena 700zł</p></div>
-               </div>
+            <div class="row center-block ">
+                <div class="col-md-4 text-center "><i class="fa fa-4x fa-graduation-cap" aria-hidden="true"></i>
+                    <h4>Szkolenie strzyżenia psów podstawowe</h4>
+                    <p>Kurs przeznaczony dla osób początkujących które chciałyby nauczyć się i przygotować do profesjonalnego strzyżenia psów. Kurs trwa 12dni. Cena 3500zł</p>
+                </div>
+                <div class="col-md-4 text-center"><i class="fa fa-4x fa-graduation-cap" aria-hidden="true"></i>
+                    <h4>Szkolenie podwyższające kwalifikacje</h4>
+                    <p>Szkolenie przeznaczone dla osób które chciałyby podnieść swoje umiejętności techniczne w strzyżeniu psów. Kurs trwa 10 dni.Cena 4000zł</p>
+                </div>
+                <div class="col-md-4 text-center"><i class="fa fa-4x fa-certificate" aria-hidden="true"></i>
+                    <h4>Szkolenie Creative Grooming</h4>
+                    <p>Szkolenie przeznaczone dla osób które chciałyby podnieść swoje kwalifikacje w nowoczesnej stylizacji psów. Szkolenie trwa 1 dzień. Cena 700zł</p>
+                </div>
+            </div>
         </div>
 
     </section>

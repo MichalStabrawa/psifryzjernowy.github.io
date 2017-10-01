@@ -72,5 +72,34 @@ $('#myBtn').on('click',function(){
 })
 
 
+/*Price function*****************************************************************************************************************/
 
+function priceShow(){
+    var priceShow1=document.getElementById('price');
+    priceShow1.style='display:block';
+      document.getElementById('changePrice').innerHTML="90-100zł";
+   
+   
+}
+
+document.getElementById('priceS').addEventListener('click', priceShow);
+
+function priceShowMedium(){
+    var priceShow2=document.getElementById('price');
+    priceShow2.style="display:block";
+    document.getElementById('changePrice').innerHTML="120-150zł";
+  
+     
+}
+
+document.getElementById('priceM').addEventListener('click', priceShowMedium);
+
+function priceShowLarge(){
+    var priceShow3=document.getElementById('price');
+    priceShow3.style="display:block";
+    document.getElementById('changePrice').innerHTML="160-250zł"
+    
+}
+
+document.getElementById('priceL').addEventListener('click', priceShowLarge);
         
