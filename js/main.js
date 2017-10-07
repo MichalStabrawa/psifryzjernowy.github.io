@@ -66,7 +66,7 @@ function scrollFunction() {
 }
 
 $('#myBtn').on('click',function(){
-    $('body').animate({
+    $('html, body').animate({
         scrollTop: $('body').offset().top
     },1000)
 })

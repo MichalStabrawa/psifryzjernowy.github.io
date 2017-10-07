@@ -205,10 +205,16 @@
         #skils #skils-icons figure figcaption {
             margin-top: 10px;
         }
-        
+  /*Panel ,Panel2 style Price */      
         #panel {
             display: none;
         }
+
+#panel input{
+   margin-bottom: 20px;
+    
+    background: pink;
+}
         
         #panel2 {
             display: none;
