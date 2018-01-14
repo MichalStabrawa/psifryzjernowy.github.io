@@ -11,11 +11,12 @@
         /* H Style span       */
         
         span {
-            color: deeppink;
+            color: #a48e59;
             font-weight: 400;
         }
         
         h2 {
+            border-bottom: 1px solid black;
             font-family: 'Titan One', cursive;
             padding-bottom: 20px;
             text-shadow: 1px 1px 1px grey;
@@ -26,14 +27,7 @@
             animation-duration: 1s;
         }
         
-        h1 {
-            font-family: 'Titan One', cursive;
-            animation-name: load;
-            text-shadow: 1px 1px 1px grey;
-            color: black;
-            animation-duration: 2s;
-            font-size: 0.8em;
-        }
+        h1 {}
         
         @keyframes load {
             from {
@@ -49,7 +43,7 @@
         }
         
         #buton .btn-primary {
-            background-color: deeppink;
+            background-color: #a48e59;
             width: 220px;
             margin-bottom: 20px;
         }
@@ -89,13 +83,15 @@
         }
         
         #main-nav ul a {
+            border-left: 1px solid #54432f;
             font-size: 20px;
-            color: deeppink;
+            color: #54432f;
             transition: all .3s;
+            text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
         }
         
         #main-nav ul a:hover {
-            color: green;
+            color: gold;
         }
         
         #main-nav.scroll {
@@ -114,32 +110,27 @@
         /* Naglowek Start *Header style**********************************************************************/
         
         #main-header {
-            background-image: url(../img/salonzoogo-header.jpg);
+            background-image: url(../img/dog-2681445_1280.jpg);
             height: 100vh;
             background-size: cover;
             position: relative;
             background-position: bottom left;
+            border-bottom: 5px solid #a48e59;
         }
         
-        #main-header .header-caption {
-            position: absolute;
-            top: 25%;
-            transform: translateY(-50%);
-            left: 0;
-            right: 0;
-            text-align: center;
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
+        .jumbotron {
+            color: #a48e59;
+            background: transparent;
+            text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
         }
         
-        #main-header .header-caption h1 {
-            font-size: 3em;
-            font-weight: 300;
+        .jumbotron p {
+            color: gold;
         }
         
-        #main-header .header-caption h2 {
-            font-size: 3em;
-            font-weight: 300;
+        .jumbotron .btn {
+            background: rgba(187, 166, 117, 0.6);
+            border: 1px solid gold;
         }
         /* Naglowek stop */
         
@@ -149,7 +140,12 @@
         /*ABOUT SECTION Style Start******************************************************************************************************************************************/
         
         #about {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backgrund-dog.jpg);
+            background-size: cover;
             margin: 0px;
+            font-size: 2rem;
+            color: #fff;
+            border-bottom: 5px solid #a48e59;
         }
         
         #about figure {
@@ -205,16 +201,16 @@
         #skils #skils-icons figure figcaption {
             margin-top: 10px;
         }
-  /*Panel ,Panel2 style Price */      
+        /*Panel ,Panel2 style Price */
+        
         #panel {
             display: none;
         }
-
-#panel input{
-   margin-bottom: 20px;
-    
-    background: pink;
-}
+        
+        #panel input {
+            margin-bottom: 20px;
+            background: pink;
+        }
         
         #panel2 {
             display: none;
@@ -242,17 +238,19 @@
         
         .parallax {
             position: relative;
-            background-image: linear-gradient(rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0.8)), url(../img/header-mija-nikola2.jpg);
+            background-image: url(../img/pattern-656585_1280.jpg);
             /* Set a specific height */
             min-height: 500px;
             /* Create the parallax scrolling effect */
             background-attachment: fixed;
-            
+            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
             color: aliceblue;
             background-position: left;
+            border-top: 5px solid #a48e59;
+            border-bottom: 5px solid #a48e59;
         }
         
         .parallax-text {
@@ -275,11 +273,38 @@
         /*course style--------------------------------------------------------------------------------------------------------------------------------*/
         
         #course .col-md-4 {
-            box-shadow:         inset 0 0 10px #000000;
-            background: pink;
+            box-shadow: inset 0 0 10px #000000;
+            background: rgba(187, 166, 117, 1);
             color: #fff;
             padding: 10px;
-            border-radius:5px;
+            border-radius: 5px;
+        }
+        /*video section*/
+        
+        .myVideo {
+            background-image: url(../img/demonstration-767864_1280.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        
+        .myVideo h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .myVideo .fa {
+            color: red;
+        }
+        
+        .myVideo .col-md-4 {
+            padding: 0px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        iframe {
+            border: 2px solid #fff;
         }
         /* Portfolio section style start Galeria*********************************************************/
         /* <!---->*/
@@ -361,7 +386,7 @@
         /* contakt style*********************************************************************************************************************************************/
         
         #contact {
-            background-color: rgba(255, 0, 255, 0.3);
+            background-color: #b4ab9f;
             color: #fff;
         }
         
@@ -397,7 +422,7 @@
             text-align: center;
             line-height: 50px;
             border-radius: 90px;
-            background-color: black
+            background-color: #b3925e;
         }
         
         #contact .social-icons a .fa:hover {
@@ -410,7 +435,6 @@
         #contact form input:not([type='submit']),
         #contact form textarea {
             width: 100%;
-            background-color: lightpink;
             border: 0px solid #fff;
             padding: 10px;
             margin-bottom: 15px;
@@ -418,11 +442,11 @@
         
         #contact form input:not([type='submit']):focus,
         #contact form textarea:focus {
-            background-color: #4c6f8d;
+            background-color: #b3925e;
         }
         
         #contact form input[type='submit'] {
-            background-color: deeppink;
+            background-color: #b3925e;
             padding: 15px;
             text-transform: uppercase;
             color: #fff;
@@ -449,7 +473,7 @@
         /*Footer Style Start*/
         
         footer {
-            background-color: #142634;
+            background-color: grey;
             padding 0 60px;
             color: #fff;
         }
@@ -478,235 +502,64 @@
             opacity: 1;
             transform: scale(1.1);
         }
-        /*btn style*/
         
-        #myBtn {
+        
+      
+        /* The Modal (background) */
+        
+        .modal-contact {
+            position: relative;
             display: none;
             position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            border: none;
-            outline: none;
-            background-color: lightpink;
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            border-radius: 10px;
-            opacity: 0.8;
+            z-index: 100;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: auto;
+            background-color: rgba(164, 142, 89,0.9);
         }
-
-
-/*Galeria Lightbox style*/
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-
-
-/*MODAL_____________________________________________________-*/
-
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top:40px;
-    right: 5px;
-    color: red;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
+        /* The Close Button */
+        
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            z-index: 100;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* The Close Button */
+        
+        .close {
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* 100% Image Width on Smaller Screens */
+        
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
